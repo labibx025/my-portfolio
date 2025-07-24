@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: linear-gradient(135deg, hsl(188, 30%, 97%) 0%, hsl(188, 20%, 99%) 100%);
+    --foreground: 210 20% 8%;
+
+    --card: hsla(0, 0%, 100%, 0.8);
+    --card-foreground: 210 20% 8%;
+
+    --popover: hsla(0, 0%, 100%, 0.95);
+    --popover-foreground: 210 20% 8%;
+
+    --primary: 188 100% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 188 40% 88%;
+    --secondary-foreground: 210 20% 8%;
+
+    --muted: 188 30% 90%;
+    --muted-foreground: 210 15% 35%;
+
+    --accent: 188 70% 82%;
+    --accent-foreground: 210 20% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 188 25% 85%;
+    --input: 188 25% 85%;
+    --ring: 188 100% 42%;
+
+    --radius: 0.75rem;
+
+    /* Portfolio specific colors */
+    --aqua-primary: 188 100% 42%;
+    --aqua-light: 188 70% 82%;
+    --aqua-dark: 188 100% 25%;
+    --tech-gradient: linear-gradient(135deg, hsl(188 100% 42%), hsl(180 100% 38%));
+    --cyber-gradient: linear-gradient(90deg, hsl(188 100% 42%), hsl(200 100% 48%));
+    --glass-bg: hsla(188, 40%, 95%, 0.9);
+    
+    /* Enhanced shadows for light theme */
+    --shadow-aqua: 0 15px 35px -10px hsl(188 100% 42% / 0.25);
+    --shadow-glow: 0 0 50px hsl(188 80% 60% / 0.3);
+    --shadow-soft: 0 4px 20px hsl(188 30% 70% / 0.15);
+    
+    /* Shadows */
+    --shadow-aqua: 0 10px 30px -10px hsl(188 100% 40% / 0.3);
+    --shadow-glow: 0 0 40px hsl(188 100% 70% / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 11% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 210 11% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 210 11% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 188 100% 50%;
+    --primary-foreground: 210 11% 8%;
+
+    --secondary: 210 11% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 210 11% 15%;
+    --muted-foreground: 210 11% 65%;
+
+    --accent: 188 95% 20%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 210 11% 20%;
+    --input: 210 11% 20%;
+    --ring: 188 100% 50%;
+
+    /* Dark mode portfolio colors */
+    --glass-bg: hsla(210, 11%, 10%, 0.8);
+    --shadow-aqua: 0 10px 30px -10px hsl(188 100% 50% / 0.5);
+    --shadow-glow: 0 0 40px hsl(188 100% 60% / 0.6);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    background: var(--background);
+    color: hsl(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
