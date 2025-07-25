@@ -84,8 +84,8 @@ const HeroSection = () => {
             className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full bg-tech-gradient p-1 shadow-[0_0_30px] shadow-primary/50"
           >
             <img 
-              src="/lovable-uploads/mypic.png"
-              alt="Md.Labib Hasan" 
+              src="/uploads/mypic.png"
+               
               className="w-full h-full rounded-full object-cover border-2 border-background"
             />
           </motion.div>
